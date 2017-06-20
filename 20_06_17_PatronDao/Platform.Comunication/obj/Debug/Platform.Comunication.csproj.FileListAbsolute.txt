@@ -1,0 +1,9 @@
+D:\Documentos\visual studio 2013\Projects\20_06_17_PatronDao\Platform.Comunication\bin\Debug\Platform.Comunication.dll
+D:\Documentos\visual studio 2013\Projects\20_06_17_PatronDao\Platform.Comunication\bin\Debug\Platform.Comunication.pdb
+D:\Documentos\visual studio 2013\Projects\20_06_17_PatronDao\Platform.Comunication\bin\Debug\Platform.Object.dll
+D:\Documentos\visual studio 2013\Projects\20_06_17_PatronDao\Platform.Comunication\bin\Debug\Platform.Service.dll
+D:\Documentos\visual studio 2013\Projects\20_06_17_PatronDao\Platform.Comunication\bin\Debug\Platform.Object.pdb
+D:\Documentos\visual studio 2013\Projects\20_06_17_PatronDao\Platform.Comunication\bin\Debug\Platform.Service.pdb
+D:\Documentos\visual studio 2013\Projects\20_06_17_PatronDao\Platform.Comunication\obj\Debug\Platform.Comunication.csprojResolveAssemblyReference.cache
+D:\Documentos\visual studio 2013\Projects\20_06_17_PatronDao\Platform.Comunication\obj\Debug\Platform.Comunication.dll
+D:\Documentos\visual studio 2013\Projects\20_06_17_PatronDao\Platform.Comunication\obj\Debug\Platform.Comunication.pdb

@@ -1,0 +1,15 @@
+D:\Documentos\visual studio 2013\Projects\20_06_17_PatronDao\20_06_17_PatronDao\bin\Debug\20_06_17_PatronDao.exe.config
+D:\Documentos\visual studio 2013\Projects\20_06_17_PatronDao\20_06_17_PatronDao\bin\Debug\20_06_17_PatronDao.exe
+D:\Documentos\visual studio 2013\Projects\20_06_17_PatronDao\20_06_17_PatronDao\bin\Debug\20_06_17_PatronDao.pdb
+D:\Documentos\visual studio 2013\Projects\20_06_17_PatronDao\20_06_17_PatronDao\bin\Debug\Platform.Comunication.dll
+D:\Documentos\visual studio 2013\Projects\20_06_17_PatronDao\20_06_17_PatronDao\bin\Debug\Platform.Object.dll
+D:\Documentos\visual studio 2013\Projects\20_06_17_PatronDao\20_06_17_PatronDao\bin\Debug\Platform.Comunication.pdb
+D:\Documentos\visual studio 2013\Projects\20_06_17_PatronDao\20_06_17_PatronDao\bin\Debug\Platform.Object.pdb
+D:\Documentos\visual studio 2013\Projects\20_06_17_PatronDao\20_06_17_PatronDao\obj\Debug\20_06_17_PatronDao.csprojResolveAssemblyReference.cache
+D:\Documentos\visual studio 2013\Projects\20_06_17_PatronDao\20_06_17_PatronDao\obj\Debug\_20_06_17_PatronDao.Form1.resources
+D:\Documentos\visual studio 2013\Projects\20_06_17_PatronDao\20_06_17_PatronDao\obj\Debug\_20_06_17_PatronDao.Properties.Resources.resources
+D:\Documentos\visual studio 2013\Projects\20_06_17_PatronDao\20_06_17_PatronDao\obj\Debug\20_06_17_PatronDao.csproj.GenerateResource.Cache
+D:\Documentos\visual studio 2013\Projects\20_06_17_PatronDao\20_06_17_PatronDao\obj\Debug\20_06_17_PatronDao.exe
+D:\Documentos\visual studio 2013\Projects\20_06_17_PatronDao\20_06_17_PatronDao\obj\Debug\20_06_17_PatronDao.pdb
+D:\Documentos\visual studio 2013\Projects\20_06_17_PatronDao\20_06_17_PatronDao\bin\Debug\Platform.Service.dll
+D:\Documentos\visual studio 2013\Projects\20_06_17_PatronDao\20_06_17_PatronDao\bin\Debug\Platform.Service.pdb

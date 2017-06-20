@@ -1,0 +1,4 @@
+D:\Documentos\visual studio 2013\Projects\20_06_17_PatronDao\Platform.Object\bin\Debug\Platform.Object.dll
+D:\Documentos\visual studio 2013\Projects\20_06_17_PatronDao\Platform.Object\bin\Debug\Platform.Object.pdb
+D:\Documentos\visual studio 2013\Projects\20_06_17_PatronDao\Platform.Object\obj\Debug\Platform.Object.dll
+D:\Documentos\visual studio 2013\Projects\20_06_17_PatronDao\Platform.Object\obj\Debug\Platform.Object.pdb
