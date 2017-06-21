@@ -13,3 +13,18 @@ D:\Documentos\visual studio 2013\Projects\20_06_17_PatronDao\20_06_17_PatronDao\
 D:\Documentos\visual studio 2013\Projects\20_06_17_PatronDao\20_06_17_PatronDao\obj\Debug\20_06_17_PatronDao.pdb
 D:\Documentos\visual studio 2013\Projects\20_06_17_PatronDao\20_06_17_PatronDao\bin\Debug\Platform.Service.dll
 D:\Documentos\visual studio 2013\Projects\20_06_17_PatronDao\20_06_17_PatronDao\bin\Debug\Platform.Service.pdb
+C:\Users\bgiraldo\Source\Repos\SqlServerCSharp\20_06_17_PatronDao\20_06_17_PatronDao\bin\Debug\20_06_17_PatronDao.exe.config
+C:\Users\bgiraldo\Source\Repos\SqlServerCSharp\20_06_17_PatronDao\20_06_17_PatronDao\bin\Debug\20_06_17_PatronDao.exe
+C:\Users\bgiraldo\Source\Repos\SqlServerCSharp\20_06_17_PatronDao\20_06_17_PatronDao\bin\Debug\20_06_17_PatronDao.pdb
+C:\Users\bgiraldo\Source\Repos\SqlServerCSharp\20_06_17_PatronDao\20_06_17_PatronDao\bin\Debug\Platform.Comunication.dll
+C:\Users\bgiraldo\Source\Repos\SqlServerCSharp\20_06_17_PatronDao\20_06_17_PatronDao\bin\Debug\Platform.Object.dll
+C:\Users\bgiraldo\Source\Repos\SqlServerCSharp\20_06_17_PatronDao\20_06_17_PatronDao\bin\Debug\Platform.Service.dll
+C:\Users\bgiraldo\Source\Repos\SqlServerCSharp\20_06_17_PatronDao\20_06_17_PatronDao\bin\Debug\Platform.Comunication.pdb
+C:\Users\bgiraldo\Source\Repos\SqlServerCSharp\20_06_17_PatronDao\20_06_17_PatronDao\bin\Debug\Platform.Object.pdb
+C:\Users\bgiraldo\Source\Repos\SqlServerCSharp\20_06_17_PatronDao\20_06_17_PatronDao\bin\Debug\Platform.Service.pdb
+C:\Users\bgiraldo\Source\Repos\SqlServerCSharp\20_06_17_PatronDao\20_06_17_PatronDao\obj\Debug\20_06_17_PatronDao.csprojResolveAssemblyReference.cache
+C:\Users\bgiraldo\Source\Repos\SqlServerCSharp\20_06_17_PatronDao\20_06_17_PatronDao\obj\Debug\_20_06_17_PatronDao.Form1.resources
+C:\Users\bgiraldo\Source\Repos\SqlServerCSharp\20_06_17_PatronDao\20_06_17_PatronDao\obj\Debug\_20_06_17_PatronDao.Properties.Resources.resources
+C:\Users\bgiraldo\Source\Repos\SqlServerCSharp\20_06_17_PatronDao\20_06_17_PatronDao\obj\Debug\20_06_17_PatronDao.csproj.GenerateResource.Cache
+C:\Users\bgiraldo\Source\Repos\SqlServerCSharp\20_06_17_PatronDao\20_06_17_PatronDao\obj\Debug\20_06_17_PatronDao.exe
+C:\Users\bgiraldo\Source\Repos\SqlServerCSharp\20_06_17_PatronDao\20_06_17_PatronDao\obj\Debug\20_06_17_PatronDao.pdb

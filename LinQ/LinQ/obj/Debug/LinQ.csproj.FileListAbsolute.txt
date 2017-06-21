@@ -1,0 +1,11 @@
+d:\documentos\visual studio 2013\Projects\LinQ\LinQ\bin\Debug\LinQ.exe.config
+d:\documentos\visual studio 2013\Projects\LinQ\LinQ\obj\Debug\LinQ.csprojResolveAssemblyReference.cache
+d:\documentos\visual studio 2013\Projects\LinQ\LinQ\obj\Debug\LinQ.Form1.resources
+d:\documentos\visual studio 2013\Projects\LinQ\LinQ\obj\Debug\LinQ.Properties.Resources.resources
+d:\documentos\visual studio 2013\Projects\LinQ\LinQ\obj\Debug\LinQ.csproj.GenerateResource.Cache
+d:\documentos\visual studio 2013\Projects\LinQ\LinQ\bin\Debug\LinQ.exe
+d:\documentos\visual studio 2013\Projects\LinQ\LinQ\bin\Debug\LinQ.pdb
+d:\documentos\visual studio 2013\Projects\LinQ\LinQ\bin\Debug\Platform.Model.dll
+d:\documentos\visual studio 2013\Projects\LinQ\LinQ\bin\Debug\Platform.Model.pdb
+d:\documentos\visual studio 2013\Projects\LinQ\LinQ\obj\Debug\LinQ.exe
+d:\documentos\visual studio 2013\Projects\LinQ\LinQ\obj\Debug\LinQ.pdb

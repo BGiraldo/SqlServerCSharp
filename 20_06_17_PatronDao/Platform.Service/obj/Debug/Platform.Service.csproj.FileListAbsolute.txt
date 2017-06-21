@@ -5,3 +5,10 @@ D:\Documentos\visual studio 2013\Projects\20_06_17_PatronDao\Platform.Service\bi
 D:\Documentos\visual studio 2013\Projects\20_06_17_PatronDao\Platform.Service\obj\Debug\Platform.Service.csprojResolveAssemblyReference.cache
 D:\Documentos\visual studio 2013\Projects\20_06_17_PatronDao\Platform.Service\obj\Debug\Platform.Service.dll
 D:\Documentos\visual studio 2013\Projects\20_06_17_PatronDao\Platform.Service\obj\Debug\Platform.Service.pdb
+C:\Users\bgiraldo\Source\Repos\SqlServerCSharp\20_06_17_PatronDao\Platform.Service\bin\Debug\Platform.Service.dll
+C:\Users\bgiraldo\Source\Repos\SqlServerCSharp\20_06_17_PatronDao\Platform.Service\bin\Debug\Platform.Service.pdb
+C:\Users\bgiraldo\Source\Repos\SqlServerCSharp\20_06_17_PatronDao\Platform.Service\bin\Debug\Platform.Object.dll
+C:\Users\bgiraldo\Source\Repos\SqlServerCSharp\20_06_17_PatronDao\Platform.Service\bin\Debug\Platform.Object.pdb
+C:\Users\bgiraldo\Source\Repos\SqlServerCSharp\20_06_17_PatronDao\Platform.Service\obj\Debug\Platform.Service.csprojResolveAssemblyReference.cache
+C:\Users\bgiraldo\Source\Repos\SqlServerCSharp\20_06_17_PatronDao\Platform.Service\obj\Debug\Platform.Service.dll
+C:\Users\bgiraldo\Source\Repos\SqlServerCSharp\20_06_17_PatronDao\Platform.Service\obj\Debug\Platform.Service.pdb

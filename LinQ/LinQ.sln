@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinQ", "LinQ\LinQ.csproj", "{810EFD3E-6658-408F-B0D2-A9BA6D965805}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Vista", "Vista", "{F8B50D7F-6549-4672-9962-4006DEF5E331}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Negocio", "Negocio", "{A10AD65D-DDC8-4E6C-88AB-4F8F6CDF2931}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Platform.Model", "Platform.Model\Platform.Model.csproj", "{79CD6072-42E0-46AB-BFFF-4E41EDEF0CD2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{810EFD3E-6658-408F-B0D2-A9BA6D965805}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{810EFD3E-6658-408F-B0D2-A9BA6D965805}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{810EFD3E-6658-408F-B0D2-A9BA6D965805}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{810EFD3E-6658-408F-B0D2-A9BA6D965805}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79CD6072-42E0-46AB-BFFF-4E41EDEF0CD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79CD6072-42E0-46AB-BFFF-4E41EDEF0CD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79CD6072-42E0-46AB-BFFF-4E41EDEF0CD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79CD6072-42E0-46AB-BFFF-4E41EDEF0CD2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{810EFD3E-6658-408F-B0D2-A9BA6D965805} = {F8B50D7F-6549-4672-9962-4006DEF5E331}
+		{79CD6072-42E0-46AB-BFFF-4E41EDEF0CD2} = {A10AD65D-DDC8-4E6C-88AB-4F8F6CDF2931}
+	EndGlobalSection
+EndGlobal

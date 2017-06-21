@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="prueba" Class="EntidadEstudianteDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=416PC20\SQLEXPRESS;Initial Catalog=prueba;Persist Security Info=True;User ID=sa" SettingsObjectName="Platform.Model.Properties.Settings" SettingsPropertyName="pruebaConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.estudiante" Member="estudiante">
+    <Type Name="estudiante">
+      <Column Name="codigo" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nombre" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="apellido" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="edad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="carrera" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="semestre" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.guardarEstudiante" Method="guardarEstudiante">
+    <Parameter Name="codigo" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="nombre" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="apellido" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="edad" Type="System.Int32" DbType="Int" />
+    <Parameter Name="carrera" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="semestre" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.buscarEstudiante" Method="buscarEstudiante">
+    <Parameter Name="codigo" Type="System.String" DbType="NVarChar(20)" />
+    <ElementType Name="buscarEstudianteResult">
+      <Column Name="codigo" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="nombre" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="apellido" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="edad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="carrera" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="semestre" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.editarEstudiante" Method="editarEstudiante">
+    <Parameter Name="codigo" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="nombre" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="apellido" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="edad" Type="System.Int32" DbType="Int" />
+    <Parameter Name="carrera" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="semestre" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.eliminarEstudiante" Method="eliminarEstudiante">
+    <Parameter Name="codigo" Type="System.String" DbType="NVarChar(20)" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>
