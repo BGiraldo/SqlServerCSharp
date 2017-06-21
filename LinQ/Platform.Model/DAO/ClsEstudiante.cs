@@ -54,18 +54,29 @@ namespace Platform.Model.DAO
         {
             // single para traer un solo registro, sin el puedo traer varios registros
 
-            var p = db.buscarEstudiante(codigo).Single();
+            try
+            {
 
-            Dictionary<String, Object> d = new Dictionary<String, Object>();
 
-            d.Add("codigo", p.codigo);
-            d.Add("nombre", p.nombre);
-            d.Add("apellido", p.apellido);
-            d.Add("edad", p.edad);
-            d.Add("carrera", p.carrera);
-            d.Add("semestre", p.semestre);
 
-            return d;
+                var p = db.buscarEstudiante(codigo).Single();
+
+                Dictionary<String, Object> d = new Dictionary<String, Object>();
+
+                d.Add("codigo", p.codigo);
+                d.Add("nombre", p.nombre);
+                d.Add("apellido", p.apellido);
+                d.Add("edad", p.edad);
+                d.Add("carrera", p.carrera);
+                d.Add("semestre", p.semestre);
+
+                return d;
+
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
         }
 
 
@@ -92,7 +103,7 @@ namespace Platform.Model.DAO
                 stu.carrera = carrera;
                 stu.semestre = semestre + "";
 
-                db.estudiante.InsertOnSubmit(stu);
+                db.estudiantes.InsertOnSubmit(stu);
                 db.SubmitChanges();
                 return true;
 
@@ -116,24 +127,32 @@ namespace Platform.Model.DAO
             Dictionary<String, Object> d = new Dictionary<string, object>();
 
             /* linq puro */
-
-            var consulta = from x in db.estudiante
-                           where x.codigo == codigo
-                           select x;
-
-            consulta.First();
-
-            foreach (var p in consulta)
+            try
             {
-                d.Add("codigo", p.codigo);
-                d.Add("nombre", p.nombre);
-                d.Add("apellido", p.apellido);
-                d.Add("edad", p.edad);
-                d.Add("carrera", p.carrera);
-                d.Add("semestre", p.semestre);
+                var consulta = from x in db.estudiantes
+                               where x.codigo == codigo
+                               select x;
+
+                consulta.First();
+
+                foreach (var p in consulta)
+                {
+                    d.Add("codigo", p.codigo);
+                    d.Add("nombre", p.nombre);
+                    d.Add("apellido", p.apellido);
+                    d.Add("edad", p.edad);
+                    d.Add("carrera", p.carrera);
+                    d.Add("semestre", p.semestre);
+                }
+
+                return d;
+
+            }
+            catch (Exception e)
+            {
+                return null;
             }
 
-            return d;
         }
 
         #endregion
@@ -144,25 +163,34 @@ namespace Platform.Model.DAO
         public Dictionary<String, Object> buscarLAMBDA(String codigo)
         {
 
-            Dictionary<String, Object> d = new Dictionary<string, object>();
-
-            /* Expresion Lambda */
-
-            var consulta = db.estudiante.Where(p => p.codigo == codigo);
-
-            consulta.First();
-
-            foreach (var p in consulta)
+            try
             {
-                d.Add("codigo", p.codigo);
-                d.Add("nombre", p.nombre);
-                d.Add("apellido", p.apellido);
-                d.Add("edad", p.edad);
-                d.Add("carrera", p.carrera);
-                d.Add("semestre", p.semestre);
-            }
 
-            return d;
+                Dictionary<String, Object> d = new Dictionary<string, object>();
+
+                /* Expresion Lambda */
+
+                var consulta = db.estudiantes.Where(p => p.codigo == codigo);
+
+                consulta.First();
+
+                foreach (var p in consulta)
+                {
+                    d.Add("codigo", p.codigo);
+                    d.Add("nombre", p.nombre);
+                    d.Add("apellido", p.apellido);
+                    d.Add("edad", p.edad);
+                    d.Add("carrera", p.carrera);
+                    d.Add("semestre", p.semestre);
+                }
+
+                return d;
+
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
 
         }
 
@@ -180,7 +208,7 @@ namespace Platform.Model.DAO
 
                 /* Expresion Linq */
 
-                var consulta = from x in db.estudiante where x.codigo == codigo select x;
+                var consulta = from x in db.estudiantes where x.codigo == codigo select x;
 
                 consulta.First();
 
@@ -191,7 +219,7 @@ namespace Platform.Model.DAO
                     est.apellido = apellido;
                     est.edad = edad;
                     est.carrera = carrera;
-                    est.semestre = semestre+"";
+                    est.semestre = semestre + "";
                 }
 
                 db.SubmitChanges();
@@ -207,6 +235,28 @@ namespace Platform.Model.DAO
 
         #endregion
 
+        #region metodo Editar con procedimiento
+
+        public bool editarPorProcedimiento(String codigo, String nombre, String apellido,
+            int edad, String carrera, int semestre)
+        {
+
+            try
+            {
+
+                db.editarEstudiante(codigo, nombre, apellido, edad,
+                   carrera, semestre);
+                return true;
+
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+
+        }
+
+        #endregion
 
 
         #region metodo Eliminar con Linq
@@ -219,14 +269,14 @@ namespace Platform.Model.DAO
 
                 /* Expresion Linq */
 
-                var consulta = from x in db.estudiante where x.codigo == codigo select x;
+                var consulta = from x in db.estudiantes where x.codigo == codigo select x;
 
                 consulta.First();
 
                 // el foreach no es necesario ya que solo es uno
                 foreach (estudiante e in consulta)
                 {
-                    db.estudiante.DeleteOnSubmit(e);
+                    db.estudiantes.DeleteOnSubmit(e);
                 }
                 db.SubmitChanges();
                 return true;
@@ -242,6 +292,24 @@ namespace Platform.Model.DAO
         #endregion
 
 
+        #region metodo Eliminar con Procedimiento
+
+        public bool eliminarConProcedimiento(String codigo)
+        {
+            try
+            {
+                db.eliminarEstudiante(codigo);
+                return true;
+
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+
+        }
+
+        #endregion
 
 
 

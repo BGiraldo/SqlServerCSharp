@@ -26,30 +26,32 @@ namespace LinQ
         private void button1_Click(object sender, EventArgs e)
         {
 
-            if(!String.IsNullOrEmpty(txtCodigo.Text) &
+            if (!String.IsNullOrEmpty(txtCodigo.Text) &
                 !String.IsNullOrEmpty(txtNombre.Text) &
-                ! String.IsNullOrEmpty(txtApellido.Text) &
+                !String.IsNullOrEmpty(txtApellido.Text) &
                 !String.IsNullOrEmpty(txtEdad.Text) &
                 !String.IsNullOrEmpty(txtCarrera.Text) &
-                !String.IsNullOrEmpty(txtSemestre.Text)){
+                !String.IsNullOrEmpty(txtSemestre.Text))
+            {
 
                 // guardar por procedimiento almacenado y linq, mapeo
-                   bool res = controller.guardar(txtCodigo.Text, txtNombre.Text, txtApellido.Text,
-                         Convert.ToInt16(txtEdad.Text), txtCarrera.Text
-                         ,  Convert.ToInt16(txtSemestre.Text));
+                bool res = controller.guardar(txtCodigo.Text, txtNombre.Text, txtApellido.Text,
+                      Convert.ToInt16(txtEdad.Text), txtCarrera.Text
+                      , Convert.ToInt16(txtSemestre.Text));
 
-                   if (res)
-                   {
-                       MessageBox.Show("Registrado");
-                   }
-                   else
-                   {
-                       MessageBox.Show("No se ha podido registrar");
-                   }
-                
-
-
+                if (res)
+                {
+                    MessageBox.Show("Registrado");
+                    this.estudianteTableAdapter.Fill(this.pruebaDataSet1.estudiante);
                 }
+                else
+                {
+                    MessageBox.Show("No se ha podido registrar");
+                }
+
+
+
+            }
             else
             {
                 MessageBox.Show("Complete los campos");
@@ -77,12 +79,13 @@ namespace LinQ
                 if (res)
                 {
                     MessageBox.Show("Registrado");
+                    this.estudianteTableAdapter.Fill(this.pruebaDataSet1.estudiante);
                 }
                 else
                 {
                     MessageBox.Show("No se ha podido registrar");
                 }
-                
+
 
 
             }
@@ -99,14 +102,22 @@ namespace LinQ
 
             if (!String.IsNullOrEmpty(txtCodigo.Text))
             {
-                   Dictionary<String,Object> datos = controller.buscar(txtCodigo.Text);
+                Dictionary<String, Object> datos = controller.buscar(txtCodigo.Text);
 
-                   txtNombre.Text = datos["nombre"]+"";
-                   txtApellido.Text = datos["apellido"] + "";
-                   txtEdad.Text = datos["edad"] + "";
-                   txtCarrera.Text = datos["carrera"] + "";
-                   txtSemestre.Text = datos["semestre"] + "";
-                 
+                if (datos != null)
+                {
+
+                    txtNombre.Text = datos["nombre"] + "";
+                    txtApellido.Text = datos["apellido"] + "";
+                    txtEdad.Text = datos["edad"] + "";
+                    txtCarrera.Text = datos["carrera"] + "";
+                    txtSemestre.Text = datos["semestre"] + "";
+                }
+                else
+                {
+                    MessageBox.Show("Not Found");
+                }
+
 
             }
             else
@@ -122,12 +133,19 @@ namespace LinQ
             if (!String.IsNullOrEmpty(txtCodigo.Text))
             {
                 Dictionary<String, Object> datos = controller.buscarLINQ(txtCodigo.Text);
+                if (datos != null)
+                {
 
-                txtNombre.Text = datos["nombre"] + "";
-                txtApellido.Text = datos["apellido"] + "";
-                txtEdad.Text = datos["edad"] + "";
-                txtCarrera.Text = datos["carrera"] + "";
-                txtSemestre.Text = datos["semestre"] + "";
+                    txtNombre.Text = datos["nombre"] + "";
+                    txtApellido.Text = datos["apellido"] + "";
+                    txtEdad.Text = datos["edad"] + "";
+                    txtCarrera.Text = datos["carrera"] + "";
+                    txtSemestre.Text = datos["semestre"] + "";
+                }
+                else
+                {
+                    MessageBox.Show("Not Found");
+                }
 
 
             }
@@ -143,11 +161,19 @@ namespace LinQ
             {
                 Dictionary<String, Object> datos = controller.buscarLAMBDA(txtCodigo.Text);
 
-                txtNombre.Text = datos["nombre"] + "";
-                txtApellido.Text = datos["apellido"] + "";
-                txtEdad.Text = datos["edad"] + "";
-                txtCarrera.Text = datos["carrera"] + "";
-                txtSemestre.Text = datos["semestre"] + "";
+                if (datos != null)
+                {
+
+                    txtNombre.Text = datos["nombre"] + "";
+                    txtApellido.Text = datos["apellido"] + "";
+                    txtEdad.Text = datos["edad"] + "";
+                    txtCarrera.Text = datos["carrera"] + "";
+                    txtSemestre.Text = datos["semestre"] + "";
+                }
+                else
+                {
+                    MessageBox.Show("Not Found");
+                }
 
 
             }
@@ -162,7 +188,21 @@ namespace LinQ
 
             if (!String.IsNullOrEmpty(txtCodigo.Text))
             {
-              
+
+                bool edit = controller.editarLinq(txtCodigo.Text,
+                    txtNombre.Text, txtApellido.Text, Convert.ToInt32 (txtEdad.Text), txtCarrera.Text,
+                    Convert.ToInt32(txtSemestre.Text));
+
+                if (edit)
+                {
+                    MessageBox.Show("Edit correctly");
+                    this.estudianteTableAdapter.Fill(this.pruebaDataSet1.estudiante);
+                }
+                else
+                {
+                    MessageBox.Show("Could not edit");
+                }
+
 
 
             }
@@ -180,6 +220,18 @@ namespace LinQ
             if (!String.IsNullOrEmpty(txtCodigo.Text))
             {
 
+                bool remove = controller.eliminarLinq(txtCodigo.Text);
+
+                if (remove)
+                {
+                    MessageBox.Show("Remove Correctly");
+                    this.estudianteTableAdapter.Fill(this.pruebaDataSet1.estudiante);
+                }
+                else
+                {
+                    MessageBox.Show("Could not remove");
+                }
+
 
 
             }
@@ -193,6 +245,62 @@ namespace LinQ
 
         private void button8_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            if (!String.IsNullOrEmpty(txtCodigo.Text))
+            {
+
+                bool edit = controller.editarPorProcedimiento(txtCodigo.Text,
+                    txtNombre.Text, txtApellido.Text, Convert.ToInt16(txtEdad.Text), txtCarrera.Text,
+                    Convert.ToInt16(txtSemestre.Text));
+
+                if (edit)
+                {
+                    MessageBox.Show("Edit correctly");
+                    this.estudianteTableAdapter.Fill(this.pruebaDataSet1.estudiante);
+                }
+                else
+                {
+                    MessageBox.Show("Could not edit");
+                }
+
+            }
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            if (!String.IsNullOrEmpty(txtCodigo.Text))
+            {
+
+                bool remove = controller.eliminarConProcedimiento(txtCodigo.Text);
+
+                if (remove)
+                {
+                    MessageBox.Show("Remove Correctly");
+                    this.estudianteTableAdapter.Fill(this.pruebaDataSet1.estudiante);
+                }
+                else
+                {
+                    MessageBox.Show("Could not remove");
+                }
+
+
+
+            }
+            else
+            {
+                MessageBox.Show("complete campo codigo");
+            }
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'pruebaDataSet1.estudiante' table. You can move, or remove it, as needed.
+            this.estudianteTableAdapter.Fill(this.pruebaDataSet1.estudiante);
 
         }
     }

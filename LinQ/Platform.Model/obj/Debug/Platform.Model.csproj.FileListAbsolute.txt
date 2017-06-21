@@ -4,3 +4,8 @@ d:\documentos\visual studio 2013\Projects\LinQ\Platform.Model\bin\Debug\Platform
 d:\documentos\visual studio 2013\Projects\LinQ\Platform.Model\bin\Debug\Platform.Model.pdb
 d:\documentos\visual studio 2013\Projects\LinQ\Platform.Model\obj\Debug\Platform.Model.dll
 d:\documentos\visual studio 2013\Projects\LinQ\Platform.Model\obj\Debug\Platform.Model.pdb
+C:\Users\bgiraldo\Source\Repos\SqlServerCSharp\LinQ\Platform.Model\bin\Debug\Platform.Model.dll.config
+C:\Users\bgiraldo\Source\Repos\SqlServerCSharp\LinQ\Platform.Model\bin\Debug\Platform.Model.dll
+C:\Users\bgiraldo\Source\Repos\SqlServerCSharp\LinQ\Platform.Model\bin\Debug\Platform.Model.pdb
+C:\Users\bgiraldo\Source\Repos\SqlServerCSharp\LinQ\Platform.Model\obj\Debug\Platform.Model.dll
+C:\Users\bgiraldo\Source\Repos\SqlServerCSharp\LinQ\Platform.Model\obj\Debug\Platform.Model.pdb

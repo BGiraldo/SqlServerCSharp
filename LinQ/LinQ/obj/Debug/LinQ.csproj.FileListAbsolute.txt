@@ -9,3 +9,15 @@ d:\documentos\visual studio 2013\Projects\LinQ\LinQ\bin\Debug\Platform.Model.dll
 d:\documentos\visual studio 2013\Projects\LinQ\LinQ\bin\Debug\Platform.Model.pdb
 d:\documentos\visual studio 2013\Projects\LinQ\LinQ\obj\Debug\LinQ.exe
 d:\documentos\visual studio 2013\Projects\LinQ\LinQ\obj\Debug\LinQ.pdb
+C:\Users\bgiraldo\Source\Repos\SqlServerCSharp\LinQ\LinQ\bin\Debug\LinQ.exe.config
+C:\Users\bgiraldo\Source\Repos\SqlServerCSharp\LinQ\LinQ\bin\Debug\LinQ.exe
+C:\Users\bgiraldo\Source\Repos\SqlServerCSharp\LinQ\LinQ\bin\Debug\LinQ.pdb
+C:\Users\bgiraldo\Source\Repos\SqlServerCSharp\LinQ\LinQ\bin\Debug\Platform.Model.dll
+C:\Users\bgiraldo\Source\Repos\SqlServerCSharp\LinQ\LinQ\bin\Debug\Platform.Model.pdb
+C:\Users\bgiraldo\Source\Repos\SqlServerCSharp\LinQ\LinQ\bin\Debug\Platform.Model.dll.config
+C:\Users\bgiraldo\Source\Repos\SqlServerCSharp\LinQ\LinQ\obj\Debug\LinQ.csprojResolveAssemblyReference.cache
+C:\Users\bgiraldo\Source\Repos\SqlServerCSharp\LinQ\LinQ\obj\Debug\LinQ.Form1.resources
+C:\Users\bgiraldo\Source\Repos\SqlServerCSharp\LinQ\LinQ\obj\Debug\LinQ.Properties.Resources.resources
+C:\Users\bgiraldo\Source\Repos\SqlServerCSharp\LinQ\LinQ\obj\Debug\LinQ.csproj.GenerateResource.Cache
+C:\Users\bgiraldo\Source\Repos\SqlServerCSharp\LinQ\LinQ\obj\Debug\LinQ.exe
+C:\Users\bgiraldo\Source\Repos\SqlServerCSharp\LinQ\LinQ\obj\Debug\LinQ.pdb

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtApellido = new System.Windows.Forms.TextBox();
@@ -49,6 +50,19 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.pruebaDataSet1 = new LinQ.pruebaDataSet1();
+            this.estudianteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.estudianteTableAdapter = new LinQ.pruebaDataSet1TableAdapters.estudianteTableAdapter();
+            this.codigoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.apellidoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.edadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.carreraDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.semestreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pruebaDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.estudianteBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // txtCodigo
@@ -225,6 +239,7 @@
             this.button9.TabIndex = 20;
             this.button9.Text = "editar*Procedimiento";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button10
             // 
@@ -234,12 +249,82 @@
             this.button10.TabIndex = 21;
             this.button10.Text = "Eliminar*Procedimiento";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.codigoDataGridViewTextBoxColumn,
+            this.nombreDataGridViewTextBoxColumn,
+            this.apellidoDataGridViewTextBoxColumn,
+            this.edadDataGridViewTextBoxColumn,
+            this.carreraDataGridViewTextBoxColumn,
+            this.semestreDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.estudianteBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 247);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(646, 202);
+            this.dataGridView1.TabIndex = 22;
+            // 
+            // pruebaDataSet1
+            // 
+            this.pruebaDataSet1.DataSetName = "pruebaDataSet1";
+            this.pruebaDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // estudianteBindingSource
+            // 
+            this.estudianteBindingSource.DataMember = "estudiante";
+            this.estudianteBindingSource.DataSource = this.pruebaDataSet1;
+            // 
+            // estudianteTableAdapter
+            // 
+            this.estudianteTableAdapter.ClearBeforeFill = true;
+            // 
+            // codigoDataGridViewTextBoxColumn
+            // 
+            this.codigoDataGridViewTextBoxColumn.DataPropertyName = "codigo";
+            this.codigoDataGridViewTextBoxColumn.HeaderText = "codigo";
+            this.codigoDataGridViewTextBoxColumn.Name = "codigoDataGridViewTextBoxColumn";
+            // 
+            // nombreDataGridViewTextBoxColumn
+            // 
+            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "nombre";
+            this.nombreDataGridViewTextBoxColumn.HeaderText = "nombre";
+            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
+            // 
+            // apellidoDataGridViewTextBoxColumn
+            // 
+            this.apellidoDataGridViewTextBoxColumn.DataPropertyName = "apellido";
+            this.apellidoDataGridViewTextBoxColumn.HeaderText = "apellido";
+            this.apellidoDataGridViewTextBoxColumn.Name = "apellidoDataGridViewTextBoxColumn";
+            // 
+            // edadDataGridViewTextBoxColumn
+            // 
+            this.edadDataGridViewTextBoxColumn.DataPropertyName = "edad";
+            this.edadDataGridViewTextBoxColumn.HeaderText = "edad";
+            this.edadDataGridViewTextBoxColumn.Name = "edadDataGridViewTextBoxColumn";
+            // 
+            // carreraDataGridViewTextBoxColumn
+            // 
+            this.carreraDataGridViewTextBoxColumn.DataPropertyName = "carrera";
+            this.carreraDataGridViewTextBoxColumn.HeaderText = "carrera";
+            this.carreraDataGridViewTextBoxColumn.Name = "carreraDataGridViewTextBoxColumn";
+            // 
+            // semestreDataGridViewTextBoxColumn
+            // 
+            this.semestreDataGridViewTextBoxColumn.DataPropertyName = "semestre";
+            this.semestreDataGridViewTextBoxColumn.HeaderText = "semestre";
+            this.semestreDataGridViewTextBoxColumn.Name = "semestreDataGridViewTextBoxColumn";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(642, 253);
+            this.ClientSize = new System.Drawing.Size(676, 473);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button7);
@@ -263,6 +348,10 @@
             this.Controls.Add(this.txtCodigo);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pruebaDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.estudianteBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -292,6 +381,16 @@
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
         private LinQ.pruebaDataSet pruebaDataSet;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private pruebaDataSet1 pruebaDataSet1;
+        private System.Windows.Forms.BindingSource estudianteBindingSource;
+        private pruebaDataSet1TableAdapters.estudianteTableAdapter estudianteTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codigoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombreDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn apellidoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn edadDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn carreraDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn semestreDataGridViewTextBoxColumn;
     }
 }
 
