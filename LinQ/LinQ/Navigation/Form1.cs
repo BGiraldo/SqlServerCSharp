@@ -43,6 +43,7 @@ namespace LinQ
                 {
                     MessageBox.Show("Registrado");
                     this.estudianteTableAdapter.Fill(this.pruebaDataSet1.estudiante);
+
                 }
                 else
                 {
@@ -80,6 +81,7 @@ namespace LinQ
                 {
                     MessageBox.Show("Registrado");
                     this.estudianteTableAdapter.Fill(this.pruebaDataSet1.estudiante);
+
                 }
                 else
                 {
@@ -197,6 +199,7 @@ namespace LinQ
                 {
                     MessageBox.Show("Edit correctly");
                     this.estudianteTableAdapter.Fill(this.pruebaDataSet1.estudiante);
+
                 }
                 else
                 {
@@ -226,6 +229,7 @@ namespace LinQ
                 {
                     MessageBox.Show("Remove Correctly");
                     this.estudianteTableAdapter.Fill(this.pruebaDataSet1.estudiante);
+
                 }
                 else
                 {
@@ -261,6 +265,7 @@ namespace LinQ
                 {
                     MessageBox.Show("Edit correctly");
                     this.estudianteTableAdapter.Fill(this.pruebaDataSet1.estudiante);
+
                 }
                 else
                 {
@@ -281,6 +286,7 @@ namespace LinQ
                 {
                     MessageBox.Show("Remove Correctly");
                     this.estudianteTableAdapter.Fill(this.pruebaDataSet1.estudiante);
+
                 }
                 else
                 {
